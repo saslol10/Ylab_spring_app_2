@@ -20,13 +20,13 @@ import java.util.Objects;
 @Slf4j
 @Component
 public class UserDataFacade {
-    private final UserServiceImpl userService;
-    private final BookServiceImpl bookService;
+    private final UserServiceImplTemplate userService;
+    private final BookServiceImplTemplate bookService;
     private final UserMapper userMapper;
     private final BookMapper bookMapper;
 
-    public UserDataFacade(UserServiceImpl userService,
-                          BookServiceImpl bookService,
+    public UserDataFacade(UserServiceImplTemplate userService,
+                          BookServiceImplTemplate bookService,
                           UserMapper userMapper,
                           BookMapper bookMapper) {
         this.userService = userService;

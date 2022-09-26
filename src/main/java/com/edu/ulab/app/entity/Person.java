@@ -12,6 +12,8 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "person")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,4 +33,5 @@ public class Person {
     @NotNull
     @NotEmpty
     private int age;
+
 }
